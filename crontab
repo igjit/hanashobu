@@ -1,0 +1,2 @@
+0 16 * * * curl http://www.meijijingu.or.jp/hanashobu/ | iconv -f cp932 | grep 花菖蒲開花数 >> hanashobu.txt
+0 22 * * * curl -o "hanashobu/`date '+\%Y-\%m-\%d'`.jpg" http://www.meijijingu.or.jp/img/news/Flower/main.jpg
