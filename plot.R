@@ -11,6 +11,7 @@ if (Sys.info()["sysname"] == "Darwin") theme_set(theme_grey(base_family = "HiraK
 
 p <- ggplot(df, aes(x = date, y = n)) +
   geom_line() +
+  scale_x_date(date_labels = "%m/%d") +
   ggtitle("花菖蒲開花数")
 
 ggsave(out, p, width = 8, height = 4.5)
